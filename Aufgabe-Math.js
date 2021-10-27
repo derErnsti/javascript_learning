@@ -41,7 +41,7 @@
 //  - 1x 5 Cent-Münze
 //  - 1x 2 Cent-Münze
 //  - 0x 2 Cent-Münze
-let n =  1537
+let n =  4567
 console.log("-".repeat(20))
 console.log("Rückgabebetrag insgesammt: " + n + "cent") 
 console.log("-".repeat(20))
@@ -95,3 +95,30 @@ console.log("-".repeat(20))
 //
 // Das Programm muss nicht perfekt sein. Es reicht, wenn es ungefähr 
 // funktioniert!
+let b1 = 34.50
+let x = ((b1/100)*20)
+let b2 = x + b1 
+let b3 = Math.round((b2 + Number.EPSILON)*100) /100
+let b4 = String(b3).padEnd(5, '0')
+function komma (float){
+    return float * 2 
+}
+function summe (float, float2){
+
+    return float + float2
+}
+function dumm (float){
+    const dadada = String(float)
+    const dududu = dadada.split('.')
+    return  dududu
+}    
+
+// console.log(b3)
+// console.log(b4)
+// console.log(komma(b3))
+// console.log(komma(b1))
+// console.log(summe(5, 7))
+// console.log("Der Gesamtbetrag beträgt: " + b3 + "$")
+console.log(b3)
+console.log(dumm(b3))
+// function dumm(d3) must return: 41.40
